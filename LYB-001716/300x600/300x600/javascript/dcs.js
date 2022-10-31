@@ -65,12 +65,12 @@ function startISIScroll(delay, AscrollTime, completeAction) {
         startISIScroll(1, 5, "stop") = after 1 second start scrolling for 5 seconds to stop point then stop
         startISIScroll(3, 5, "pause~1") = after 3 seconds start autoscrolling for 5 seconds to stop point, then pause for 1 second, then return to top
     */
-	getElem('isiTextHolder').addEventListener ("mousedown", interruptScroll);
+	getElem('isi-text-holder').addEventListener ("mousedown", interruptScroll);
 	scrollTime = AscrollTime;
 	var delay = delay;
 	if (delay != undefined) {
 		var stopStick = getElem("stop");
-		var viewportHeight = getElem("isiTextHolder").clientHeight;
+		var viewportHeight = getElem("isi-text-holder").clientHeight;
 		var stopPointTop;
 		if (stopStick != null) {
 			stopPointTop = stopStick.offsetTop;
@@ -80,13 +80,13 @@ function startISIScroll(delay, AscrollTime, completeAction) {
 				stopStick.innerHTML = stopText;
 				stopPointTop = stopStick.offsetTop - viewportHeight + (stopStick.clientHeight * 2);
 				//auto-scroll
-				TweenMax.to(getElem('isiTextHolder'), scrollTime, { scrollTo: { y: stopPointTop, autoKill: true }, delay: delay, ease: Linear.easeNone, onComplete: autoscrollComplete, onCompleteParams: [completeAction] });
+				TweenMax.to(getElem('isi-text-holder'), scrollTime, { scrollTo: { y: stopPointTop, autoKill: true }, delay: delay, ease: Linear.easeNone, onComplete: autoscrollComplete, onCompleteParams: [completeAction] });
 			} else {
 				autoscrollComplete(completeAction);
 			}
 		} else {
-			stopPointTop = getElem("isiText").clientHeight;
-			TweenMax.to(getElem('isiTextHolder'), scrollTime, { scrollTo: { y: stopPointTop, autoKill: true }, delay: delay, ease: Linear.easeNone, onComplete: autoscrollComplete, onCompleteParams: [completeAction] });
+			stopPointTop = getElem("isi-text").clientHeight;
+			TweenMax.to(getElem('isi-text-holder'), scrollTime, { scrollTo: { y: stopPointTop, autoKill: true }, delay: delay, ease: Linear.easeNone, onComplete: autoscrollComplete, onCompleteParams: [completeAction] });
 		}
 	} else {
 		animationComplete();
@@ -101,12 +101,12 @@ function autoscrollComplete(completeAction) {
 		animationComplete();
 	} else { //pause ~ # (return to top)
 		var acsdelay = completeAction.substr(completeAction.indexOf("~") + 1);
-		TweenMax.to(getElem('isiTextHolder'), .25, { scrollTo: { y: 0, autoKill: true }, delay: acsdelay, ease: Linear.easeNone, onComplete: animationComplete });
+		TweenMax.to(getElem('isi-text-holder'), .25, { scrollTo: { y: 0, autoKill: true }, delay: acsdelay, ease: Linear.easeNone, onComplete: animationComplete });
 	}
 }
 function interruptScroll(e){
-	TweenMax.killTweensOf(getElem('isiTextHolder'));
-	getElem('isiTextHolder').removeEventListener ("mousedown", interruptScroll);
+	TweenMax.killTweensOf(getElem('isi-text-holder'));
+	getElem('isi-text-holder').removeEventListener ("mousedown", interruptScroll);
 	setEventForExit();
 }
 //ALL

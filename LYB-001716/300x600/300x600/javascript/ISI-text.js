@@ -1,12 +1,9 @@
 /*
 add "<p id='stop'></p>" at the point that you want autoscroll to stop at. Will use stopText if necessary 
 */
-
-
 var stopText = "<p></p><p></p>";
 
 var isiText = "" +
-"<header class='space'>IMPORTANT SAFETY INFORMATION</header>" + 
 "<b>Boxed Warning: Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. LYBALVI is not approved for the treatment of patients with dementia-related psychosis.</b>" + 
 "<p><b>Contraindications:</b> LYBALVI is contraindicated in patients who are using opioids or are undergoing acute opioid withdrawal. If LYBALVI is administered with lithium or valproate, refer to the lithium or valproate Prescribing Information for the contraindications for these products.</p>" +
 "<p><b>Cerebrovascular Adverse Reactions in Elderly Patients with Dementia-Related Psychosis,</b> including stroke, transient ischemia attack, and fatalities. See Boxed Warning above.</p>" +
