@@ -1,6 +1,4 @@
 /* Global CSS */
-/* ::-webkit-scrollbar{webkit-appearance:none;width:7px;}
-::-webkit-scrollbar-thumb{background-color:rgba(0, 0, 0, .25);webkit-box-shadow:0 0 1px rgba(255, 255, 255, 1);} */
 ::-webkit-scrollbar {webkit-appearance:none;width: 5px;} 
 ::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 10px #d8d8d8; border-radius: 2.5px;}
 ::-webkit-scrollbar-thumb {border-radius: 2.5px; height: 12px; -webkit-box-shadow: inset 0 0 10px #939393;}
@@ -59,7 +57,7 @@ a#isipi{color:#00467f !important;}
 #dim300x600 #isi-text .no-space{padding-bottom: 0px;}
 #dim300x600 #isi-text li{padding-bottom: 3px;position: relative;}
 #dim300x600 #isi-text .alk-logo{padding-top: 10px;}
-#dim300x600 #isi-text .alk-logo span{background:url(../images/300x600_alkermes-logo.jpg) no-repeat;background-size: contain; width: 149px;height: 38px;display: inline-block;}
+#dim300x600 #isi-text .alk-logo span{background:url(../images/300x600_alkermes-logo.jpg) no-repeat;background-size: contain; width: 116px;height: 30px;display: inline-block;}
 
 /* firefox specific css */
 @supports (-moz-appearance:none) {
