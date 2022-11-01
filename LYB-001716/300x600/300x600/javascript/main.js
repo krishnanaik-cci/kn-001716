@@ -3,6 +3,47 @@ window.onload = function () {
 	init();
 };
 
+/* Timer code starts */
+function timeToString(time) {
+	let diffInHrs = time / 3600000;
+	let hh = Math.floor(diffInHrs);
+
+ let diffInMin = (diffInHrs - hh) * 60;
+	let mm = Math.floor(diffInMin);
+
+ let diffInSec = (diffInMin - mm) * 60;
+	let ss = Math.floor(diffInSec);
+
+ let diffInMs = (diffInSec - ss) * 100;
+	let ms = Math.floor(diffInMs);
+
+ let formattedMM = mm.toString().padStart(2, "0");
+	let formattedSS = ss.toString().padStart(2, "0");
+	let formattedMS = ms.toString().padStart(2, "0");
+	return `${formattedMM}:${formattedSS}:${formattedMS}`;
+}
+let startTime;
+let elapsedTime = 0;
+let timerInterval;
+function print(txt) {
+	document.getElementById("display").innerHTML = txt;
+}
+//Start Timer
+function startwatch() {
+	startTime = Date.now() - elapsedTime;
+	timerInterval = setInterval(function printTime() {
+			elapsedTime = Date.now() - startTime;
+			print(timeToString(elapsedTime));
+	}, 10);
+}
+//stop Timer
+var obj = {
+	create: function () {
+			clearInterval(timerInterval);
+	}
+}
+/* Timer code ends */
+
 
 var id, time, loopMax = 0, loopCount = 0;
 var stageWidth, stageHeight;
@@ -71,7 +112,14 @@ function startAnimation() {
 	.to(getElem("text-three"), speed, {autoAlpha:0, x:-300, delay:.50}, "frame3")
 	.to(getElem("lybalvi-logo-two"), speed, {autoAlpha:1, delay: 1}, "frame3")
 	.to(getElem("cta"), speed, {autoAlpha:1, delay:1.95}, "frame3")
+
+	/* Stop timer */
+	.add(obj.create)//must be removed later
+
 }
+
+/* start timer function call */
+startwatch(); //must be removed later 
 
 
 // End of Animation
