@@ -1,0 +1,137 @@
+/* Global CSS */
+::-webkit-scrollbar {webkit-appearance:none;width: 5px;} 
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 10px #d8d8d8; border-radius: 2.5px;}
+::-webkit-scrollbar-thumb {border-radius: 2.5px;-webkit-box-shadow: inset 0 0 10px #939393;}
+*{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+div{font-family: 'Arial';line-height:1;opacity:0;position:absolute;}
+ul{list-style-type: none;}
+ul li:before{content:"\2022";color:#B25928;padding-right: 5px;font-size: 13px;margin-left: -10px;position: absolute;top: 0;}
+a{cursor:pointer;text-decoration: underline;}
+a:link, a:visited{color:#ffffff;cursor:pointer;text-decoration:underline;}
+#cover{left:0;overflow:hidden;top:0;}
+#hotspot{cursor:pointer;left:0;top:0;}
+
+/* Global CSS for ISI content */
+#isi{overflow: hidden;}
+#isiText sup{font-size:11px;vertical-align: top;}
+#isiText b{ font-family: 'Arial';font-weight: 700;}
+#isiText a{color:#45474D;}
+@supports (-moz-appearance:none) {
+    #isi *{letter-spacing: normal !important;}
+}
+
+/* CSS for #dim300x250 */
+#dim300x250 #cover{width:300px;height:250px;}
+#dim300x250 #hotspot{width:300px;height:250px;}
+#dim300x250 #background{background-color:#ffffff; top:0px;left:0px; width:300px; height:250px;}
+#dim300x250 #disclaimer{height: 12px;
+  width: 144px;
+  color: #45474D;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  height: 16px;
+  width: 300px;
+  background-color: #D8D8D8;
+}
+/* #dim300x250 #disclaimer span{display: inline-block;transform: matrix(1, 0, 0, 1, 88, 2);} */
+#dim300x250 #blue-gradient{background: linear-gradient(315deg, #7CC7EF 0%, #20B9F5 33.29%, #0091E6 66.63%, #096CBE 100%);width: 300px;height: 144px;}
+#dim300x250 #logo{    width: 76px;
+  top: 25px;
+  left: 112px;
+  height: 55px;}
+#dim300x250 #indication-text{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; left: 13px; top: 26px; letter-spacing: 0.1px;}
+#dim300x250 #indication-list{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 40px;} 
+#dim300x250 #indication-list ul li{position: relative; left: -17px; top: -12px;}
+#dim300x250 #indication-list ul li:before{color: #ffffff; font-size: 14px; position: absolute;}
+#dim300x250 #copper-bar{top: 134px; left: -299px;}
+#dim300x250 #list-text-1{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 26px; left: 28px;}
+#dim300x250 #list-text-2{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 37px; left: 28px;}
+#dim300x250 #list-text-1 span, #list-text-2 span {display: inline-block; position: absolute; top: 5px; height: 4px; width: 4px; left: -11px; border-radius: 50%; border: 1px solid #FFFFFF;}
+#dim300x250 #rita-therapist{transform: translateX(-170px);}
+#dim300x250 #text-3{color: #FFFFFF;font-family: "Open Sans"; font-weight: 700; line-height: 9px; font-size: 7px; top: 18px; transform: translateX(-50px); text-align: right;}
+#dim300x250 #copper-bar-1{ top: 19px; left: 132px;}
+#dim300x250 #text-4{color: #FFFFFF;font-family: "fieldwork-hum"; font-size: 13px; line-height: 14px; font-weight: 700; left: 133px; top: 39px;}
+#dim300x250 #text-5{color: #FFFFFF;font-family: "fieldwork-hum"; font-size: 13px; line-height: 14px; font-weight: 700; left: 133px; top: 39px;}
+#dim300x250 #lybalvi-logo-1 img{ width: 80px; top: 28px;  left: 23px; position: absolute;}
+#dim300x250 #button{font-family: fieldwork-hum, sans-serif;font-weight: 700;height: 39px;width: 125px;border-radius: 2px;background-color: #FFFFFF;color: #0091E6;font-size: 12.71px;line-height: 12px;left: 130px;top: 37px; text-align: center;}
+#dim300x250 #button span{display: inline-block;padding: 9px;}
+#dim300x250 #button img{position: absolute; top: 10px; left: 111px; width: 31px; height: 20px;}
+#dim300x250 #text-2{color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 15px;
+  top: 85px;
+  left: 8px;}
+#dim300x250 #text-2 a{color: #FFFFFF;}
+
+/* CSS for mac safari browser */
+@supports selector(:nth-child(1 of x)) {
+    #dim300x250 #indication-text{top: 23px;}
+    #dim300x250 #indication-list{top: 37px;}
+    #dim300x250 #list-text-1{top: 23px;}
+    #dim300x250 #list-text-2{top: 34px;}
+    #dim300x250 #list-text-1 span, #list-text-2 span{top: 8px;}
+    #dim300x250 #text-4{top: 37px;}
+    #dim300x250 #text-5{top: 37px;}
+    #dim300x250 #button span{padding: 7px;}
+}
+
+/* CSS for IOS  devices */
+@supports (-webkit-touch-callout: none) {
+    #dim300x250 #indication-text{top: 24px;}
+    #dim300x250 #indication-list{top: 37px;}
+    #dim300x250 #list-text-1{top: 24px;}
+    #dim300x250 #list-text-2{top: 35px;}
+    #dim300x250 #list-text-1 span, #list-text-2 span{top: 7px;}
+    #dim300x250 #text-4{top: 36px;}
+    #dim300x250 #text-5{top: 36px;}
+    #dim300x250 #button span{padding: 6px;}
+    #dim300x250 #isiText .reg-mark{display: inline-block;transform: translateY(-1px);}
+}
+
+/* CSS for Firefox */
+@supports (-moz-appearance:none) {
+    #dim300x250 #indication-text{letter-spacing: 0;}
+    #dim300x250 #text-4{top: 38px;}
+    #dim300x250 #text-5{top: 38px;}
+}
+
+/* CSS for mac Chrome */
+#dim300x250 .mac-chrome > #indication-text{top: 23px;}
+#dim300x250 .mac-chrome > #indication-list{top: 37px;}
+#dim300x250 .mac-chrome > #list-text-1{top: 23px;}
+#dim300x250 .mac-chrome > #list-text-2{top: 34px;}
+#dim300x250 .mac-chrome > #list-text-1 span{top: 8px;}
+#dim300x250 .mac-chrome > #list-text-2 span{top: 8px;}
+#dim300x250 .mac-chrome > #text-4{top: 37px;}
+#dim300x250 .mac-chrome > #text-5{top: 37px;}
+#dim300x250 .mac-chrome #button span{padding: 7px;}
+
+/* 300x250 - CSS for ISI content */
+#dim300x250 #isi{height:110px;left:0;top:141px;width:299px;background-color: #ffffff;}
+#dim300x250 #isiHeaderText{font-family: 'Arial'; font-weight: 700; color:#114797; font-size:14px;width: 280px; padding: 5px 8px 3px;line-height: 16px;letter-spacing: -0.31px;top: 0; background: #fff;}
+#dim300x250 #isiTextHolder{height:85px; overflow-x:hidden; overflow-y:scroll; top:23px; width:293px;}
+#dim300x250 #isiText{font-family: 'Arial'; font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding: 0 0 5px 8px;letter-spacing: normal;}
+#dim300x250 #isiText header{color:#114797; font-size:14px; font-family: 'Arial'; font-weight:700; letter-spacing: -0.31px; padding: 12px 0 3px;}
+#dim300x250 #isiText header + p{letter-spacing: normal;}
+#dim300x250 #isiText .header-2{padding: 4px 0 5px 0;}
+#dim300x250 #isiText .reg-mark{line-height: 100%; font-size: smaller;}
+#dim300x250 #isiText ul{padding-left: 10px; padding-top: 5px; margin: 0;letter-spacing: normal;}
+#dim300x250 #isiText p{padding-top: 4px;margin: 0;}
+#dim300x250 #isiText .space-top{letter-spacing: -0.24px;}
+#dim300x250 #isiText .space-top li{padding-bottom: 0;}
+#dim300x250 #isiText .remove-bullet::before{display: none;}
+#dim300x250 #isiText .remove-bullet ul{padding-left: 11px;}
+#dim300x250 #isiText .remove-bullet li::before{content:"\25E6";content: "";border: 1px solid #B25928;border-radius: 50%;top: 5px;left: 1px;background-color: #fff;height: 3px;width: 3px;padding-right: 0;box-sizing: border-box;}
+#dim300x250 #isiText .remove-bullet ul,#dim300x250 #isiText #stop p{padding-top: 1px;}
+#dim300x250 #isiText .space{padding-bottom: 5px;font-size: 11px;padding-top: 2px;}
+#dim300x250 #isiText .no-space{padding-bottom: 0;}
+#dim300x250 #isiText li{padding-bottom: 4px;position: relative;}
+#dim300x250 #isiText .alk-logo{padding-top: 10px;}
+#dim300x250 #isiText .alk-logo span{background:url(../images/300x250_alkermes-logo.jpg) no-repeat;background-size: contain; width: 149px;height: 38px;display: inline-block;}
