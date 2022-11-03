@@ -103,8 +103,8 @@ function startAnimation() {
 	.addLabel("frame1", "+=3")
 	.to(getElem("lybalvi-logo"), speed, {autoAlpha:0, x:-300}, "frame1")
 	.to([getElem("victoria-img"), getElem("text-one")], speed, {autoAlpha:1, x:0,}, "frame1")
-	.to([getElem("copper-bar"), getElem("text-two")], speed, {autoAlpha:1, delay:2}, "frame1")
 	.to([getElem("lybalvi-logo")], speed, {autoAlpha:1, delay:2, scaleX:.89, scaleY:.89, x:1, y:-68}, "frame1")
+	.to([getElem("copper-bar"), getElem("text-two")], speed, {autoAlpha:1, delay:2}, "frame1")
 	
 	.addLabel("frame2", "+=2.15")
 	.to(getElem("text-two"), speed, {autoAlpha:0}, "frame2")

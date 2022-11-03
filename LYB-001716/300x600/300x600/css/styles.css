@@ -21,9 +21,9 @@ a#isipi{color:#00467f !important;}
 
 /* 300x600 - CSS for ISI content */
 #dim300x600 #isi{height:145px; left:0; top:470px; width:299px;}
-#dim300x600 #isi-header-text{background:#fff; z-index:1; font-family:'Arial'; font-weight:700; color:#114796; top:2px; height:16px; width:285px; font-size:14px; font-weight:bold; letter-spacing:-0.31px; line-height:16px; padding:5px 8px;}
+#dim300x600 #isi-header-text{background:#fff; z-index:1; font-weight:700; color:#114796; top:2px; height:16px; width:285px; font-size:14px; font-weight:bold; letter-spacing:-0.31px; line-height:16px; padding:5px 8px;}
 #dim300x600 #isi-text-holder{height:98px; opacity:1; overflow-x:hidden; overflow-y:scroll; top:28px; width:293px;}
-#dim300x600 #isi-text{font-family:'Arial'; font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding:1px 0 0 8px; letter-spacing:0;}
+#dim300x600 #isi-text{font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding:1px 0 0 8px; letter-spacing:0;}
 #dim300x600 #isi-text header{color:#114796; font-size:12px; font-family:'Arial'; font-weight:700; letter-spacing:normal;}
 #dim300x600 #isi-text header + p{letter-spacing:normal;}
 #dim300x600 #isi-text .reg-mark{line-height:100%; font-size:smaller;}
@@ -40,37 +40,38 @@ a#isipi{color:#00467f !important;}
 #dim300x600 #isi-text .alk-logo{padding-top:10px;}
 #dim300x600 #isi-text .alk-logo span{background:url(../images/300x600_alkermes-logo.jpg) no-repeat; background-size:contain; width:116px; height:30px; display:inline-block;}
 
-/* CSS for #dim300x600 */
-#dim300x600 #cover{width:300px; height:600px;}
-#dim300x600 #hotspot{width:300px; height:600px;}
+/* Custom CSS for #dim300x600 */
+#dim300x600 #cover, #dim300x600 #hotspot{width:300px; height:600px;}
 #dim300x600 #background{background:linear-gradient(315deg, #7CC7EF 0%, #20B9F5 33.29%, #0091E6 66.63%, #096CBE 100%); top:0; left:0; width:300px; height:480px;}
-#dim300x600 #disclaimer{height:16px; width:300px; background-color:#D8D8D8; color:#45474D; font-family:'Arial'; font-weight:700; font-size:11px; letter-spacing:0; line-height:16px; text-align:center;}
+#dim300x600 #disclaimer{height:16px; width:300px; background-color:#D8D8D8; color:#45474D; font-weight:700; font-size:11px; line-height:16px;}
 #dim300x600 #lybalvi-logo{width:220px; top:117px; left:40px;}
-#dim300x600 #isi-indicator-text{color:#ffffff; font-family:'Open Sans'; font-size:13px; top:417px; left:8px; line-height:15px; font-weight:bold; letter-spacing:0.25px;}
+#dim300x600 #isi-indicator-text{font-family:'Open Sans'; font-size:13px; top:417px; left:8px; line-height:15px; letter-spacing:0.25px;}
 #dim300x600 #copper-bar{top:296px; left:25px;}
-#dim300x600 #text-two{font-family:'fieldwork-hum'; font-weight:bold; font-size:16px; line-height:19px; top:315px; left:25px;}
-#dim300x600 #text-two sup{font-size:10px; line-height:1.2; vertical-align:top;}
-#dim300x600 #text-three{font-family:'fieldwork-hum'; font-weight:bold; font-size:16px; line-height:19px; top:315px; left:25px;}
-#dim300x600 #text-three sup{font-size:10px; line-height:1.2; vertical-align:top;}
+#dim300x600 #text-two, #dim300x600 #text-three{font-size:16px; line-height:19px; top:315px; left:25px;}
+#dim300x600 #text-two sup, #dim300x600 #text-three sup{font-size:10px; line-height:1.2; vertical-align:top;}
 #dim300x600 #victoria-img{background:url(../images/300x600_victoria.jpg); width:266px; height:273px; transform:matrix(1, 0, 0, 1, 300, 0);}
-#dim300x600 #text-one{font-family:'fieldwork-hum'; font-weight:500; font-size:12px; letter-spacing:0; line-height:14px; color:#FFFFFF; top:248px; left:0; transform:matrix(1, 0, 0, 1, 300, 0); background:linear-gradient(180deg, rgba(84,82,82,0) 0%, #938F8F 100%); height:18px; width:260px; padding:8px 0 0 6px;}
-#dim300x600 #cta{color:#0091E6; font-size:24px; letter-spacing:0; line-height:26px; text-align:center; background-color:#fff; width:187px; height:78px; font-family:'fieldwork-hum'; border-radius:2px; padding:11px 12px 8px; top:241px; left:42px; background-color:#FFFFFF; font-weight:bold;}
+#dim300x600 #text-one{font-weight:500; font-size:12px; line-height:14px;top:248px; left:0; transform:matrix(1, 0, 0, 1, 300, 0); background:linear-gradient(180deg, rgba(84,82,82,0) 0%, #938F8F 100%); height:18px; width:260px; padding:8px 0 0 6px;}
+#dim300x600 #cta{color:#0091E6; font-size:24px; line-height:26px; background-color:#fff; width:187px; height:78px; border-radius:2px; padding:11px 12px 8px; top:241px; left:42px;}
+#dim300x600 #cta, #dim300x600 #disclaimer{text-align:center;}
 #dim300x600 #cta img{float:right; transform:translate(58%, -53px);}
+#dim300x600 #isi-indicator-text, #dim300x600 #text-one{color:#FFFFFF;}
+#dim300x600 #cta, #dim300x600 #text-one, #dim300x600 #disclaimer{letter-spacing:0;}
+#dim300x600 #text-one,#dim300x600 #text-two, #dim300x600 #text-three, #dim300x600 #cta{font-family:'fieldwork-hum';}
+#dim300x600 #text-two, #dim300x600 #text-three, #dim300x600 #isi-indicator-text, #dim300x600 #cta{font-weight:bold;}
 
 /* Safari specific css */
 @supports selector(:nth-child(1 of x)) {
   #dim300x600 #text-one{top:247px;}
   #dim300x600 #text-two, #dim300x600 #text-three{top:313px;}
   #dim300x600 #cta{padding:8px 12px 10px;}
-  #dim300x600 #cta img{padding:8px 12px 10px; transform:translate(58%, -56px);}
+  #dim300x600 #cta img{transform:translate(58%, -56px);}
 }
 
 /* MAC Chrome specific css */
 #dim300x600 .mac-chrome #text-one{top:247px;}
-#dim300x600 .mac-chrome #text-two, #dim300x600 #text-three{top:313px;}
+#dim300x600 .mac-chrome #text-two, #dim300x600 .mac-chrome #text-three{top:313px;}
 #dim300x600 .mac-chrome #cta{padding:8px 12px 10px;}
-#dim300x600 .mac-chrome #cta img{padding:8px 12px 10px; transform:translate(58%, -56px);}
-
+#dim300x600 .mac-chrome #cta img{transform:translate(58%, -56px);} 
 
 /* Firefox specific css */
 @supports (-moz-appearance:none) {
