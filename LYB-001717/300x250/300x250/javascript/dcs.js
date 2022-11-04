@@ -24,25 +24,20 @@ function pageLoadedHandler() {
 		Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, init);
 	}
 }
-
 function exitHandler(e) {
 	var target = e.toElement || e.relatedTarget || e.target || function () { throw "Failed to attach an event target!"; }
     if (target.id != "replay") {
         switch (target.id) {
             case "clickTag1": Enabler.exit("clickTag1 exit", "https://www.lybalvi.com/lybalvi-prescribing-information.pdf"); break;
-			case "clickTag2": Enabler.exit("clickTag2 exit", "https://www.fda.gov/medwatch"); break;
-			case "clickTag3": Enabler.exit("clickTag3 exit", "https://www.lybalvi.com/lybalvi-prescribing-information.pdf"); break;
-            default: Enabler.exit("hotspot exit", "https://www.lybalvihcp.com/registration"); break;
+						case "clickTag2": Enabler.exit("clickTag2 exit", "https://www.fda.gov/medwatch"); break;
+						case "clickTag3": Enabler.exit("clickTag3 exit", "https://www.lybalvi.com/lybalvi-prescribing-information.pdf"); break;
+            default: Enabler.exit("hotspot exit", "https://www.lybalvihcp.com/schizophrenia-enlighten-2-efficacy-safety"); break;
         }
-    } else {
-      //  replay();
     }
 }
-
 //ISI
 var scrollTime;
 var scrollInterrupted = false;
-
 function setEventForExit(){
 	getElem("hotspot").addEventListener('click', exitHandler, false);
 	var array = getElem("cover").getElementsByTagName("a");
@@ -109,22 +104,18 @@ function interruptScroll(e){
 	getElem('isiTextHolder').removeEventListener ("mousedown", interruptScroll);
 	setEventForExit();
 }
-//ALL
 function animationComplete() {
     //called at end of all animation
     var animationFinishTime = new Date().getTime();
 	setEventForExit();
 }
-
 function addNewEvent(id){
 	target = getElem(id);
 	target.style.cursor = "pointer";
 	target.style.zIndex = 4000;
-	// target.style.textDecoration = "underline";
 	target.style.position = "relative";
 	target.addEventListener('click', exitHandler, false);
 }
-
 function createBorder() {
     //creates a 1 pixel border that allows interaction
     //  REQUIRES <div id="cover"> ... <div id="border"></div></div>
