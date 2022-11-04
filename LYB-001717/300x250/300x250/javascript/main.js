@@ -87,13 +87,13 @@ function startAnimation() {
 	.to(getElem("lybalvi-logo"), speed, {autoAlpha:0}, "frame1")
 	.to([getElem("alex-kitchen-img"), getElem("text-2"), getElem("text-3")], speed, {autoAlpha:1, x:0, delay: .8}, "frame1")
 	
-	.addLabel("frame3", "+=2.2")
+	.addLabel("frame3", "+=2")
 	.to(getElem("text-3"), speed, {autoAlpha:0}, "frame3")
-	.to([getElem("light-blue-gradient"), getElem("text-2")], speed, {opacity:0.79, delay:.70}, "frame3")
-	.to(getElem("text-4"), speed, {autoAlpha:1, delay:.70}, "frame3")
+	.to([getElem("light-blue-gradient"), getElem("text-2")], speed, {opacity:0.79, delay:.76}, "frame3")
+	.to(getElem("text-4"), speed, {autoAlpha:1, delay:.76}, "frame3")
 	.to([getElem("lybalvi-logo")], speed, {autoAlpha:0, scale:1, x:-68, y:-2}, "frame3")
 
-	.addLabel("frame4", "+=.25")
+	.addLabel("frame4", "+=.20")
 	.to([getElem("alex-kitchen-img"), getElem("text-2"), getElem("text-4"), getElem("light-blue-gradient")], speed, {autoAlpha:0}, "frame4")
 	.to([getElem("cta"), getElem("lybalvi-logo")], speed, {autoAlpha:1, delay:1}, "frame4")
 
