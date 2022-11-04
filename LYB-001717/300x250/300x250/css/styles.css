@@ -27,12 +27,13 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #dim300x250 #isiText .reg-mark{line-height:100%; font-size:smaller;}
 #dim300x250 #isiText ul{padding-left:10px; padding-top:5px; margin:0; letter-spacing:normal;}
 #dim300x250 #isiText p{padding-top:4px; margin:0;}
+#dim300x250 #isiText p:last-child, #dim300x250 #isiText #stop, #dim300x250 #isiText #stop p{padding-top:0;}
 #dim300x250 #isiText .space-top{letter-spacing:-0.24px;}
 #dim300x250 #isiText .space-top li{padding-bottom:0;}
 #dim300x250 #isiText .remove-bullet::before{display:none;}
 #dim300x250 #isiText .remove-bullet ul{padding-left:11px;}
 #dim300x250 #isiText .remove-bullet li::before{content:"\25E6"; content:""; border:1px solid #B25928; border-radius:50%; top:5px; left:1px; background-color:#fff; height:3px; width:3px; padding-right:0; box-sizing:border-box;}
-#dim300x250 #isiText .remove-bullet ul,#dim300x250 #isiText #stop p{padding-top:1px;}
+#dim300x250 #isiText .remove-bullet ul{padding-top:1px;}
 #dim300x250 #isiText .space{padding-bottom:5px; font-size:11px; padding-top:2px;}
 #dim300x250 #isiText .no-space{padding-bottom:0;}
 #dim300x250 #isiText li{padding-bottom:4px; position:relative;}
