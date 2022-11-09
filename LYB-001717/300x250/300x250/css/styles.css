@@ -16,10 +16,11 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #isiText b{ font-family:'Arial'; font-weight:700;}
 #isiText a{color:#45474D;}
 @supports (-moz-appearance:none) {#isi *{letter-spacing:normal !important;}}
+
 /* 300x250 - CSS for ISI content */
 #dim300x250 #isi{height:110px; left:0; top:141px; width:299px; background-color:#ffffff;}
 #dim300x250 #isiHeaderText{font-weight:700; color:#114797; font-size:14px; width:280px; padding:5px 8px 3px; line-height:16px; letter-spacing:-0.31px; top:0; background:#fff;}
-#dim300x250 #isiTextHolder{height:85px; overflow-x:hidden; overflow-y:scroll; top:24px; width:293px;}
+#dim300x250 #isiTextHolder{height:82px; overflow-x:hidden; overflow-y:scroll; top:24px; width:293px;}
 #dim300x250 #isiText{font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding:0 0 5px 8px; letter-spacing:normal;}
 #dim300x250 #isiText header{color:#114797; font-size:14px; font-family:'Arial'; font-weight:700; letter-spacing:-0.31px; padding:12px 0 3px;}
 #dim300x250 #isiText header + p{letter-spacing:normal;}
@@ -39,24 +40,27 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #dim300x250 #isiText li{padding-bottom:4px; position:relative;}
 #dim300x250 #isiText .alk-logo{padding-top:10px;}
 #dim300x250 #isiText .alk-logo span{background:url(../images/300x250_alkermes-logo.jpg) no-repeat; background-size:contain; width:116px; height:30px; display:inline-block;}
+
 /* Custom CSS for #dim300x250 */
 #dim300x250 #cover, #dim300x250 #hotspot, #dim300x250 #background{width:300px; height:250px;}
 #dim300x250 #background{top:0; left:0}
-#dim300x250 #disclaimer{height:12px; width:144px; color:#45474D; font-size:11px; font-weight:bold; letter-spacing:0; line-height:16px; text-align:center; height:16px; width:300px; background-color:#D8D8D8;}
+#dim300x250 #disclaimer{color:#45474D; font-size:11px; font-weight:bold; letter-spacing:0; line-height:16px; text-align:center; height:16px; width:300px; background-color:#D8D8D8;}
 #dim300x250 #blue-gradient, #dim300x250 #light-blue-gradient{background:linear-gradient(315deg, #7CC7EF 0%, #20B9F5 33.29%, #0091E6 66.63%, #096CBE 100%); width:300px; height:144px;}
 #dim300x250 #lybalvi-logo{width:76px; top:25px; left:112px; height:55px;}
 #dim300x250 #copper-bar{top:128px; left:0;}
 #dim300x250 #copper-bar img{width: 100%;}
 #dim300x250 #cta{font-family:'fieldwork-hum'; text-align:left; font-weight:700; top:25px; right:31px; height:54px; width:105px; border-radius:2px; color:#0091E6; font-size:14px; letter-spacing:0; padding:5px 6px; box-sizing:border-box; line-height:15px;}
-#dim300x250 #cta img{height:20.96px; width:37.78px; float:right; transform:translate(65%, -3px);}
+#dim300x250 #cta img{height:21px; width:38px; float:right; transform:translate(65%, -3px);}
 #dim300x250 #text-1{font-family:"Open Sans"; font-size:13px; font-weight:bold; letter-spacing:0; line-height:15px; top:85px; left:8px;}
 #dim300x250 #text-2{font-family:'fieldwork-hum'; height:14px; width:90px; font-size:9px; letter-spacing:0; line-height:14px; top:18px; right:3px;}
-#dim300x250 #text-3, #dim300x250 #text-4{font-family:'fieldwork-hum'; height:40px; width:287px; font-size:16px; letter-spacing:0.6px; line-height:20px; text-align:center; font-weight:bold; left:6px; top:40px;}
+#dim300x250 #text-3, #dim300x250 #text-4{font-family:'fieldwork-hum'; height:40px; width:287px; font-size:16px; letter-spacing:0.6px; line-height:20px; text-align:center; font-weight:bold; left:6px;}
 #dim300x250 #text-3 sup, #dim300x250 #text-4 sup{font-size:10px; line-height:1.2; vertical-align:top;}
+#dim300x250 #text-3{top:40px;}
 #dim300x250 #text-4{top:38px;}
 #dim300x250 #alex-kitchen-img {top:-15px;}
 #dim300x250 #background, #dim300x250 #cta{background-color:#ffffff;}
 #dim300x250 #text-1, #dim300x250 #text-2, #dim300x250 #text-3, #dim300x250 #text-4, #dim300x250 #text-2 a{color:#FFFFFF}; 
+
 /* CSS for mac safari browser */
 @supports selector(:nth-child(1 of x)) {
 #dim300x250 #cta{padding:4px 6px;}
@@ -64,6 +68,7 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #dim300x250 #text-2{top:16px;}
 #dim300x250 #text-3{top:37px;}
 }
+
 /* CSS for IOS  devices */
 @supports (-webkit-touch-callout: none) {
 #dim300x250 #text-2{top:16px;}
@@ -74,6 +79,7 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #dim300x250 #isiTextHolder{top: 23px;}
 #dim300x250 #isiText{padding:0 5px 5px 8px;}
 }
+
 /* MAC Chrome specific css */
 #dim300x250 .mac-chrome #text-2{top:16px;}
 #dim300x250 .mac-chrome #text-3{top:37px;}
@@ -82,5 +88,6 @@ a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #dim300x250 .mac-chrome #cta img{transform:translate(65%, -1px);} 
 #dim300x250 .mac-chrome #isiTextHolder{top: 23px;}
 #dim300x250 .mac-chrom #isiText{padding:0 5px 5px 8px;}
+
 /* CSS for Firefox */
 @supports (-moz-appearance:none) {#dim300x250 #isi-text{letter-spacing:normal;}}
