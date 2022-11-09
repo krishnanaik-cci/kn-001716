@@ -2,6 +2,7 @@
 window.onload = function () {
 	init();
 };
+
 /* Timer code starts */
 function timeToString(time) {
 	let diffInHrs = time / 3600000;
@@ -17,12 +18,14 @@ function timeToString(time) {
 	let formattedMS = ms.toString().padStart(2, "0");
 	return `${formattedMM}:${formattedSS}:${formattedMS}`;
 }
+
 let startTime;
 let elapsedTime = 0;
 let timerInterval;
 function print(txt) {
 	document.getElementById("display").innerHTML = txt;
 }
+
 //Start Timer
 function startwatch() {
 	startTime = Date.now() - elapsedTime;
@@ -31,6 +34,7 @@ function startwatch() {
 			print(timeToString(elapsedTime));
 	}, 10);
 }
+
 //stop Timer
 var obj = {
 	create: function () {
@@ -38,6 +42,7 @@ var obj = {
 	}
 }
 /* Timer code ends */
+
 var id, time, loopMax = 0, loopCount = 0;
 var stageWidth, stageHeight;
 var animationStartTime, loopStartTime, loopFinishTime;
@@ -55,6 +60,7 @@ var func = {
 	}
 }
 /* Frame elements */
+
 // Init defined here
 function init() {
 	id = document.getElementsByTagName('body')[0].id;
@@ -76,6 +82,7 @@ function init() {
 	}
 	startAnimation();
 }
+
 // Start Animation defined here
 var timeScale = 1;
 var lastFrameTimeScale = 1.25;
@@ -100,8 +107,10 @@ function startAnimation() {
 	/* Stop timer */
 	.add(obj.create)//must be removed later
 }
+
 /* start timer function call */
 startwatch(); //must be removed later 
+
 // End of Animation
 function finishTimeline() {
 	if (getElem("isi") != null) {

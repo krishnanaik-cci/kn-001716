@@ -10,6 +10,7 @@ a{cursor:pointer; text-decoration:underline;}
 a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
 #cover{left:0; overflow:hidden; top:0;}
 #hotspot{cursor:pointer; left:0; top:0;}
+
 /* Global CSS for ISI content */
 #isi{overflow:hidden;}
 #isiText sup{font-size:11px; vertical-align:top;}

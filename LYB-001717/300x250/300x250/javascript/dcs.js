@@ -6,10 +6,12 @@ window.onload = function() {
 		Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitHandler);
 	}
 }
+
 function enablerInitHandler() {
 	createBorder();
 	politeLoad();
 }
+
 function politeLoad() {
 	if (Enabler.isPageLoaded()) {
 		pageLoadedHandler();
@@ -17,6 +19,7 @@ function politeLoad() {
 		Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, pageLoadedHandler);
 	}
 }
+
 function pageLoadedHandler() {
 	if (Enabler.isVisible()) {
 		init();
@@ -24,6 +27,7 @@ function pageLoadedHandler() {
 		Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, init);
 	}
 }
+
 function exitHandler(e) {
 	var target = e.toElement || e.relatedTarget || e.target || function () { throw "Failed to attach an event target!"; }
     if (target.id != "replay") {
@@ -35,6 +39,7 @@ function exitHandler(e) {
         }
     }
 }
+
 //ISI
 var scrollTime;
 var scrollInterrupted = false;
@@ -46,6 +51,7 @@ function setEventForExit(){
 		addNewEvent(array[i].id);
 	}
 }
+
 function startISIScroll(delay, AscrollTime, completeAction) {
 	setEventForExit();
     /*
@@ -87,6 +93,7 @@ function startISIScroll(delay, AscrollTime, completeAction) {
 		animationComplete();
 	}
 }
+
 function autoscrollComplete(completeAction) {
     /*
     called by startISIScroll when auto scroll is completed
@@ -99,16 +106,19 @@ function autoscrollComplete(completeAction) {
 		TweenMax.to(getElem('isiTextHolder'), .25, { scrollTo: { y: 0, autoKill: true }, delay: acsdelay, ease: Linear.easeNone, onComplete: animationComplete });
 	}
 }
+
 function interruptScroll(e){
 	TweenMax.killTweensOf(getElem('isiTextHolder'));
 	getElem('isiTextHolder').removeEventListener ("mousedown", interruptScroll);
 	setEventForExit();
 }
+
 function animationComplete() {
     //called at end of all animation
     var animationFinishTime = new Date().getTime();
 	setEventForExit();
 }
+
 function addNewEvent(id){
 	target = getElem(id);
 	target.style.cursor = "pointer";
@@ -116,6 +126,7 @@ function addNewEvent(id){
 	target.style.position = "relative";
 	target.addEventListener('click', exitHandler, false);
 }
+
 function createBorder() {
     //creates a 1 pixel border that allows interaction
     //  REQUIRES <div id="cover"> ... <div id="border"></div></div>
@@ -128,7 +139,9 @@ function createBorder() {
     str += '<div style="border-bottom:1px solid #979797; opacity: 1 !important;  width: ' + w + 'px; height: 0px; top: ' + (h - 1) + 'px; left: 0px; z-index:1003;"></div>';
     getElem("border").innerHTML = str;
 }
+
 function getElem(id) { return document.getElementById(id); }
+
 function centerText(id,dir){
 	dir = dir || "both";
 	if(dir=="both" || dir == "horizontal") getElem(id).style.left = getElem(id).parentNode.clientWidth/2 - getElem(id).clientWidth/2 + "px";
