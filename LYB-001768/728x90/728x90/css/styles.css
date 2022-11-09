@@ -1,73 +1,91 @@
 /* Global CSS */
-::-webkit-scrollbar {webkit-appearance:none;width: 5px;} 
-::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 10px #d8d8d8; border-radius: 2.5px;}
-::-webkit-scrollbar-thumb {border-radius: 2.5px;-webkit-box-shadow: inset 0 0 10px #939393;}
-div{font-family: 'Arial';line-height:1;opacity:0;position:absolute;}
-ul{list-style-type: none;}
-ul li:before{content:"\2022";color:#B25928;padding-right: 5px;font-size: 13px;margin-left: -10px;position: absolute;top: 0;}
-a{cursor:pointer;text-decoration: underline;}
-a:link, a:visited{color:#ffffff;cursor:pointer;text-decoration:underline;}
-#cover{left:0;overflow:hidden;top:0;}
-#hotspot{cursor:pointer;left:0;top:0;}
-.pb-2{padding-bottom: 2px;}
-*{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+::-webkit-scrollbar {webkit-appearance:none; width:5px;} 
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 10px #d8d8d8; border-radius:2.5px;}
+::-webkit-scrollbar-thumb {border-radius:2.5px; -webkit-box-shadow:inset 0 0 10px #939393;}
+div{font-family:'Arial'; line-height:1; opacity:0; position:absolute;}
+ul{list-style-type:none;}
+ul li:before{content:"\2022"; color:#B25928; padding-right:5px; font-size:13px; margin-left:-10px; position:absolute; top:0;}
+a{cursor:pointer; text-decoration:underline;}
+a:link, a:visited{color:#ffffff; cursor:pointer; text-decoration:underline;}
+#cover{left:0; overflow:hidden; top:0;}
+#hotspot{cursor:pointer; left:0; top:0;}
+.pb-2{padding-bottom:2px;}
+*{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+
 /* Global CSS for ISI content */
 #isi{overflow:hidden;}
-#isiText sup{font-size:11px;vertical-align: top;}
-#isiText b{font-family: 'Arial';font-weight: 700;}
+#isiText sup{font-size:11px; vertical-align:top;}
+#isiText b{font-family:'Arial'; font-weight:700;}
 #isiText a{color:#45474D;}
-@supports (-moz-appearance:none) {#isi *{letter-spacing: normal !important;}}
+
 /* 728x90 - CSS for ISI content */
-#dim728x90 #isi{height:90px;right:0;top:0;width:250px;}
-#dim728x90 #isiHeaderText{background:transparent; font-family: 'Arial';font-weight: 700; color:#114797; font-size:14px;width: 244px; padding-left: 11px;line-height: 16px;letter-spacing: -0.31px;top: 5px;}
-#dim728x90 #isiTextHolder{height:51px; overflow-x:hidden; overflow-y:scroll; top:37px; width:245px;}
-#dim728x90 #isiText{font-family: 'Arial'; font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding:0 5px 0 11px;letter-spacing: normal}
-#dim728x90 #isiText header{color:#114797; font-size:14px; font-family: 'Arial';font-weight: 700;letter-spacing: normal; line-height: 16px;padding: 12px 0 0;}
-#dim728x90 #isiText header + p{letter-spacing: normal;}
-#dim728x90 #isiText .reg-mark{line-height: 100%; font-size: smaller;}
-#dim728x90 #isiText ul{padding-left: 9px; padding-top: 5px; margin: 0px;letter-spacing: normal;}
-#dim728x90 #isiText p{padding-top: 4px;margin: 0;}
-#dim728x90 #isiText .space-top{letter-spacing: -0.24px;}
-#dim728x90 #isiText .space-top li{padding-bottom: 0;}
-#dim728x90 #isiText .remove-bullet::before{display: none;}
-#dim728x90 #isiText .remove-bullet ul{padding-left: 11px;}
-#dim728x90 #isiText .remove-bullet li::before{content:"\25E6";content: "";border: 1px solid #B25928;border-radius: 50%;top: 5px;left: 1px;background-color: #fff;height: 3px;width: 3px;padding-right: 0;box-sizing: border-box;}
-#dim728x90 #isiText .remove-bullet ul,#dim728x90 #isiText #stop p{padding-top: 1px;}
-#dim728x90 #isiText .space{padding-bottom: 5px;font-size: 11px;padding-top: 2px;}
-#dim728x90 #isiText .no-space{padding-bottom: 0px;}
+#dim728x90 #isi{height:90px; right:0; top:0; width:250px;}
+#dim728x90 #isiHeaderText{background:transparent; font-weight:700; color:#114797; font-size:14px; width:235px; padding-left:11px; line-height:16px; letter-spacing:-0.31px; top:5px;}
+#dim728x90 #isiTextHolder{height:62px; overflow-x:hidden; overflow-y:scroll; top:25px; width:245px;}
+#dim728x90 #isiText{font-size:11px; color:#45474D; line-height:14px; font-weight:400; padding:0 5px 0 11px; letter-spacing:0}
+#dim728x90 #isiText header{color:#114797; font-size:14px; font-family:'Arial'; font-weight:700; letter-spacing:normal; line-height:16px; padding:12px 0 0;}
+#dim728x90 #isiText header + p{letter-spacing:normal;}
+#dim728x90 #isiText .reg-mark{line-height:100%; font-size:smaller;}
+#dim728x90 #isiText ul{padding-left:9px; padding-top:5px; margin:0; letter-spacing:normal;}
+#dim728x90 #isiText p{padding-top:4px; margin:0;}
+#dim728x90 #isiText p:last-child{padding-top:0;}
+#dim728x90 #isiText .space-top{letter-spacing:-0.24px;}
+#dim728x90 #isiText .space-top li{padding-bottom:0;}
+#dim728x90 #isiText .remove-bullet::before{display:none;}
+#dim728x90 #isiText .remove-bullet ul{padding-left:11px;}
+#dim728x90 #isiText .remove-bullet li::before{content:"\25E6"; content:""; border:1px solid #B25928; border-radius:50%; top:5px; left:1px; background-color:#fff; height:3px; width:3px; padding-right:0; box-sizing:border-box;}
+#dim728x90 #isiText .remove-bullet ul,#dim728x90 #isiText #stop p{padding-top:1px;}
+#dim728x90 #isiText .space{padding-bottom:5px; font-size:11px; padding-top:2px;}
+#dim728x90 #isiText .no-space{padding-bottom:0;}
 #dim728x90 #isiText .pt-0{padding-top:0}
-#dim728x90 #isiText .header-2{padding-top:5px;padding-bottom: 3px;letter-spacing: -0.31px;}
-#dim728x90 #isiText li{padding-bottom: 4px;position: relative;}
-#dim728x90 #isiText .alk-logo{padding-top: 10px;padding-bottom: 5px;}
-#dim728x90 #isiText .alk-logo span{background:url(../images/728x90_alkermes_logo.jpg) no-repeat;background-size: contain; width: 149px;height: 38px;display: inline-block;}
+#dim728x90 #isiText .header-2{padding-top:5px; padding-bottom:3px; letter-spacing:-0.31px;}
+#dim728x90 #isiText li{padding-bottom:4px; position:relative;}
+#dim728x90 #isiText .alk-logo{padding-top:10px; padding-bottom:5px;}
+#dim728x90 #isiText .alk-logo span{background:url(../images/728x90_alkermes_logo.jpg) no-repeat; background-size:contain; width:149px; height:38px; display:inline-block;}
+
 /* Custom CSS for #dim728x90 */
-#dim728x90 #cover, #dim728x90 #hotspot{width:728px;height:90px;}
-#dim728x90 #background{background-color: #fff; top:0px;left:0px; width:728px; height:90px;}
-#dim728x90 #chalkboard{background:url(../images/728x90_chalkboard.svg) center/cover no-repeat; width: 480px; height: 90px;}
-#dim728x90 #sponsored-text{background-color: #D8D8D8;color: #45474D;font-family: 'Arial';font-weight: bold;font-size: 11px;letter-spacing: 0;line-height: 12px; width: 144px; height: 12px;padding: 2px 3px 2px 3px;}
-#dim728x90 #prescribing-text{color: #fff; font-family: "Open Sans"; font-weight: 700; font-size: 13px; line-height: 15px; left: 298px; top: 6px; text-align: center; letter-spacing: 0px;}
-#dim728x90 #lybalvi-logo{left: 17px; top: 23px; width: 80px;}
-#dim728x90 #indication-text{height: 22px; width: 287px;color: #FFFFFF; font-family: "fieldwork-hum"; font-size: 12px;top: 23px; line-height: 15px; left: 8px; font-weight: bold; letter-spacing: 0.05px;}
-#dim728x90 #indication-list{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 40px;} 
-#dim728x90 #indication-list ul{padding-left: 37px; margin-top: 9px; margin-bottom: 0;}
-#dim728x90 #indication-list ul li{position: relative; left: -20px; top: -10px; color: #FFFFFF; width: 290px; font-family: "fieldwork-hum"; font-size: 12px; line-height: 14px; margin-bottom: 4px; letter-spacing: -0.1px;}
-#dim728x90 #indication-list ul li:before{color: #ffffff; font-size: 14px; position: absolute;}
-#dim728x90 #list-text-1{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 27px; left: 29px;}
-#dim728x90 #list-text-2{color: #ffffff; font-size: 16px; line-height: 18px; font-family: "fieldwork-hum", sans-serif; font-weight: 700; top: 35px; left: 30px;}
-#dim728x90 #list-text-1 span, #list-text-2 span{display: inline-block; position: absolute; width: 4px; height: 4px; border-radius: 50%; border: 1px solid #ffffff; top: 4px; left: -11px;}
-#dim728x90 #rita-therapist{transform: matrix(1, 0, 0, 1, -100, 4);}
-#dim728x90 #text-4{color: #fff; font-family: "fieldwork-hum"; font-weight: 700; font-size: 14px; line-height: 15px; top: 37px; left: 116px;}
-#dim728x90 #disclaimer-text{color: #fff; font-family: "Open Sans"; font-weight: 700; font-size: 6px; line-height: 7px; top: 17px; left: -50px; letter-spacing: 0.1px;}
-#dim728x90 #copper-bar{top: 18px; left: 115px;}
-#dim728x90 #text-1 {height: 42px; width: 152px; color: #FFFFFF; font-family: 'fieldwork-hum'; font-size: 12px; letter-spacing: 0; line-height: 14px; left: 117px; top: 33px;}
-#dim728x90 #text-5{color: #fff; font-family: "fieldwork-hum"; font-weight: 700; font-size: 14px; line-height: 16px; top: 37px; left: 116px;}
-#dim728x90 #cta {background-color: #ffffff; font-family: "fieldwork-hum"; top: 26px; left: 117px; font-weight: 700; text-align: center; height: 39px; width: 157px; border-radius: 2px; color: #0091E6; font-size: 12px; letter-spacing: 0; line-height: 17px; padding-top: 12px; box-sizing: border-box;}
-#dim728x90 #copper-arrow-right img{top: 43px; left: 235px; position: absolute; width: 36px;}
-#dim728x90 #first-word{top: 30px; width: 102px; left: 12px;}
-#dim728x90 #first-word::after, #dim728x90 #second-word::after{content: ""; position: absolute; right: -16px; width: 14px; height: 14px;}
-#dim728x90 #first-word::after{background: url(../images/160x600_plus.png) center/contain no-repeat;}
-#dim728x90 #second-word::after{background: url(../images/160x600_equal.png) center/contain no-repeat;}
-#dim728x90 #second-word{top: 51px; width: 117px; left: 8px;}
-#dim728x90 #first-word img,#dim728x90 #second-word img{max-width: 100%;}
-/* below css should be given through js */
-/* #dim728x90 #lybalvi-logo {top: 23px; width: 80px; transform: matrix(1.32, 0, 0, 1.32, 149, -7);}*/
+#dim728x90 #cover, #dim728x90 #hotspot, #dim728x90 #background{width:728px; height:90px;}
+#dim728x90 #background{top:0; left:0;}
+#dim728x90 #chalkboard{background:url(../images/728x90_chalkboard.png) center/cover no-repeat; width:480px; height:90px;}
+#dim728x90 #sponsored-text{background-color:#D8D8D8; color:#45474D; font-weight:bold; font-size:11px; letter-spacing:0; line-height:12px; width:144px; height:12px; padding:2px 3px 2px 3px;}
+#dim728x90 #prescribing-text{color:#fff; font-family:"Open Sans"; font-weight:700; font-size:13px; line-height:15px; left:298px; top:6px; text-align:center; letter-spacing:0;}
+#dim728x90 #lybalvi-logo{left:17px; top:23px; width:80px;}
+#dim728x90 #indication-text{width:290px; color:#FFFFFF; font-family:"fieldwork-hum"; font-size:12px; top:23px; line-height:15px; left:8px; letter-spacing:0; font-weight:600;}
+#dim728x90 #indication-list{color:#ffffff; font-size:16px; line-height:18px, sans-serif; top:40px;} 
+#dim728x90 #indication-list ul{padding-left:37px; margin-top:9px; margin-bottom:0;}
+#dim728x90 #indication-list ul li{position:relative; left:-20px; top:-10px; color:#FFFFFF; width:290px; font-family:"fieldwork-hum"; font-size:12px; line-height:14px; margin-bottom:4px; letter-spacing:-0.15px; font-weight:600;}
+#dim728x90 #indication-list ul li:before{color:#ffffff; font-size:14px; position:absolute;}
+#dim728x90 #indication-list-item1, #dim728x90 #indication-list-item2{opacity:0;}
+#dim728x90 #text-1{width:152px; color:#FFFFFF; font-family:'fieldwork-hum'; font-size:12px; letter-spacing:0; line-height:14px; left:117px; top:33px; font-weight:600;}
+#dim728x90 #cta {background-color:#ffffff; font-family:"fieldwork-hum"; top:26px; left:117px; font-weight:700; text-align:center; height:39px; width:157px; border-radius:2px; color:#0091E6; font-size:12px; letter-spacing:0; line-height:17px; padding-top:12px; box-sizing:border-box;}
+#dim728x90 #first-word{top:30px; left:12px; width:0;}
+#dim728x90 #first-word img{width:102px;}
+#dim728x90 #second-word{top:51px; left:8px; width:0;}
+#dim728x90 #second-word img{width:117px;}
+#dim728x90 #first-word, #dim728x90 #second-word{overflow:hidden;}
+#dim728x90 #plus{top:30px; left:115px;}
+#dim728x90 #equal{top:50px; left:126px;}
+#dim728x90 #plus, #dim728x90 #equal{overflow:hidden; width:0;}
+
+/* Safari specific css */
+@supports selector(:nth-child(1 of x)) {
+  #dim728x90 #text-1{top:31px;}
+  #dim728x90 #cta{padding-top:10px;}
+  #dim728x90 #indication-text{top:20px;}
+  #dim728x90 #indication-list ul li{top:-12px;}
+}
+
+/* MAC Chrome specific css */
+#dim728x90 .mac-chrome #cta{padding-top:10px;}
+#dim728x90 .mac-chrome #text-1{top:31px;}
+#dim728x90 .mac-chrome #indication-text{top:20px;}
+#dim728x90 .mac-chrome #indication-list ul li{top:-12px;}
+
+/* Firefox specific css */
+@supports (-moz-appearance:none) {
+  #dim728x90 #isi-text{letter-spacing:normal;} 
+  #dim728x90 #indication-text{top:22px;}
+  #dim728x90 #chalkboard{height:89px;}
+  #dim728x90 #sponsored-text{letter-spacing:-0.26px;}
+}
+

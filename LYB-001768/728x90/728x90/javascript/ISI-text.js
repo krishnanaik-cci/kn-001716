@@ -3,7 +3,6 @@ add "<p id='stop'></p>" at the point that you want autoscroll to stop at. Will u
 */
 var stopText = "<p></p><p></p>";
 var isiText = "" +
-"<header class='header-2'>IMPORTANT SAFETY INFORMATION</header>" + 
 "<b>Boxed Warning: Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. LYBALVI is not approved for the treatment of patients with dementia-related psychosis.</b>" + 
 "<p><b>Contraindications:</b> LYBALVI is contraindicated in patients who are using opioids or are undergoing acute opioid withdrawal. If LYBALVI is administered with lithium or valproate, refer to the lithium or valproate Prescribing Information for the contraindications for these products.</p>" +
 "<p><b>Cerebrovascular Adverse Reactions in Elderly Patients with Dementia-Related Psychosis,</b> including stroke, transient ischemia attack, and fatalities. See Boxed Warning above.</p>" +
@@ -41,6 +40,7 @@ var isiText = "" +
 "<li class='remove-bullet'><ul><li><span>Acute treatment of manic or mixed episodes as monotherapy and as adjunct to lithium or valproate</span></li><li><span>Maintenance monotherapy treatment</span></li></ul></li>" +
 "</ul>" +
 "<p><b>Please see full <a id='clickTag3'>Prescribing Information</a>, including Boxed Warning, for LYBALVI.</b></p>" +
+"<p><b>Reference:</b> LYBALVI [prescribing information]. Waltham, MA: Alkermes, Inc.; 2021. </p>" +
 "<p class='alk-logo'><span></span></p>" +
-"<p class='pt-0'>ALKERMES<sup class='reg-mark'>&reg;</sup> is a registered trademark of Alkermes, Inc. LYBALVI<sup class='reg-mark'>&reg;</sup> is a registered trademark and the LYBALVI logo is a trademark of Alkermes Pharma Ireland Limited, both used by Alkermes, Inc., under license. &copy;2022 Alkermes, Inc. All rights reserved. LYB-001719</p>" +
+"<p class='pt-0'>ALKERMES<sup class='reg-mark'>&reg;</sup> is a registered trademark of Alkermes, Inc. LYBALVI<sup class='reg-mark'>&reg;</sup> is a registered trademark and the LYBALVI logo is a trademark of Alkermes Pharma Ireland Limited, both used by Alkermes, Inc., under license. &copy;2022 Alkermes, Inc. All rights reserved. LYB-001768</p>" +
 "<p id='stop'></p>";

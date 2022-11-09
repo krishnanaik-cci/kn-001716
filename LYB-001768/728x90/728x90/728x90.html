@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/tmh7kbz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qyb6tjn.css">
     <!--CUSTOM-->
     <link href="css/styles.css" rel="stylesheet">
     <!--scripts-->
     <script type='text/javascript'>
-        var clickTag1 = 'https://www.lybalvi.com/lybalvi-prescribing-information.pdf';
+        var clickTag1 = 'https://www.lybalvi.com/lybalvi-prescribing-information.pdf';//
         var clickTag2 = 'https://www.fda.gov/medwatch';
-        var clickTag3 = 'https://www.lybalvi.com/lybalvi-prescribing-information.pdf';       
+        var clickTag3 = 'https://www.lybalvi.com/lybalvi-prescribing-information.pdf';      
     </script>
     <script src="https://s0.2mdn.net/ads/studio/Enabler.js"> </script>
     <script src="javascript/dcs.js"></script>
@@ -27,43 +27,41 @@
     <!--animation-->
     <script src="javascript/main.js"></script>
 </head>
-<img src="../overlay/overlay-1.jpg"
-    style="opacity: .6; z-index: 2; width: 728px; height: 90px; position: absolute; top: 0; left: 0; display: none;" />
-<img src="../overlay/overlay-2.jpg"
-    style="opacity: .6; z-index: 2; width: 728px; height: 90px; position: absolute; top: 0; left: 0; display: none;" />
-<img src="../overlay/overlay-3.jpg"
-    style="opacity: .6; z-index: 2; width: 728px; height: 90px; position: absolute; top: 0; left: 0; display: none;" />
-<img src="../overlay/overlay-4.jpg"
-    style="opacity: .6; z-index: 2; width: 728px; height: 90px; position: absolute; top: 0; left: 0; display: none;" />
 <body id="dim728x90">
+    <!-- Timer html -->
+    <p style="position: absolute;right: 400px;left: 310px;top: 150px;font-size: 24px;font-weight: bold;" id="display">00:00:00</p>
+
     <div id="cover">
         <div id="background"></div>
         <div id="chalkboard"></div>
-        <div id="sponsored-text"><span>Ad Sponsored by Alkermes</span></div>
+
         <!-- frame1 -->
-        <div id="lybalvi-logo"><img src="images/728x90_logo.svg" /></div>
-       <!-- <div id="text-1">For the treatment of adults with schizophrenia,<br>and</div> -->
+        <div id="lybalvi-logo"><img src="images/728x90_logo.svg" alt="lybalvi logo" /></div>
+        <div id="text-1">For the treatment of adults with schizophrenia,<br>and</div>
+
         <!-- frame2 -->
-       <!-- <div id="indication-text">For the treatment of adults with bipolar I disorder</div>
-       <div id="indication-list">
+        <div id="indication-text">For the treatment of adults with bipolar I disorder</div>
+        <div id="indication-list">
            <ul>
-               <li>Acute treatment of manic or mixed episodes as monotherapy and as adjunct to lithium or valproate</li>
-               <li>Maintenance monotherapy treatment</li>
+               <li id="indication-list-item1">Acute treatment of manic or mixed episodes as monotherapy and as adjunct to lithium or valproate</li>
+               <li id="indication-list-item2">Maintenance monotherapy treatment</li>
            </ul>
-        </div> -->
+        </div>
+
         <!-- frame3 -->
-        <!-- <div id="first-word"><img src="images/160x600_first-word.png"/> -->
-        <!-- </div> -->
-        <!-- <div id="second-word"><img src="images/160x600_second-word.png"/> -->
-            <!-- <img src="images/160x600_equal.png"/> -->
-        <!-- </div> -->
+        <div id="first-word"><img src="images/160x600_first-word.png" alt="olanzapine" /></div>
+        <div id="plus"><img src="images/160x600_plus.png" alt="plus" /></div>
+        <div id="second-word"><img src="images/160x600_second-word.png" alt="samidorphane" /></div>
+        <div id="equal"><img src="images/160x600_equal.png" alt="equal" /></div>
+
         <!-- frame4 -->
         <div id="cta">Explore the components</div>
-        <!--end frames-->
-        <div id="prescribing-text">Please see adjacent<br />Important Safety<br />Information, including<br />BOXED WARNING, and full<br />
-            <a id="clickTag1">Prescribing Information</a>.</div>
+
+        <!--static content on all frames -->
+        <div id="sponsored-text">Ad Sponsored by Alkermes</div>
+        <div id="prescribing-text">Please see adjacent<br/>Important Safety<br/>Information, including<br/>BOXED WARNING, and full<br/><a id="clickTag1">Prescribing Information</a>.</div>
         <div id="hotspot"></div>
-        <div id="isi"><div id="isiHeader"><div id="isiHeaderText">IMPORTANT SAFETY<br>INFORMATION AND INDICATIONS</div></div><div id="isiTextHolder"><div id="isiText"></div></div></div>
+        <div id="isi"><div id="isiHeader"><div id="isiHeaderText">IMPORTANT SAFETY INFORMATION</div></div><div id="isiTextHolder"><div id="isiText"></div></div></div>
         <div id="border"></div>
     </div>
 </body>
